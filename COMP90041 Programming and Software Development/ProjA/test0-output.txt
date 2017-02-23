@@ -1,0 +1,40 @@
+Welcome to Tic Tac Toe!
+
+Enter Player O's name:
+Enter Player X's name:
+ | | 
+-----
+ | | 
+-----
+ | | 
+Rose's move:
+ | | 
+-----
+ |O| 
+-----
+ | | 
+Jack's move:
+ | | 
+-----
+ |O| 
+-----
+ | |X
+Rose's move:
+ | | 
+-----
+ |O|O
+-----
+ | |X
+Jack's move:
+ | | 
+-----
+ |O|O
+-----
+ |X|X
+Rose's move:
+ | | 
+-----
+O|O|O
+-----
+ |X|X
+Game over. Rose won!

@@ -1,0 +1,15 @@
+sprout.cmo :
+sprout.cmx :
+sprout_ast.cmi :
+sprout_parse.cmi : sprout_ast.cmi
+sprout_pprint.cmi :
+sprout_ast.cmo : sprout_ast.cmi
+sprout_ast.cmx : sprout_ast.cmi
+sprout_lex.cmo : sprout_parse.cmi
+sprout_lex.cmx : sprout_parse.cmx
+sprout_parse.cmo : sprout_ast.cmi sprout_parse.cmi
+sprout_parse.cmx : sprout_ast.cmx sprout_parse.cmi
+sprout_pprint.cmo : sprout_pprint.cmi
+sprout_pprint.cmx : sprout_pprint.cmi
+sprout.cmo :
+sprout.cmx :
