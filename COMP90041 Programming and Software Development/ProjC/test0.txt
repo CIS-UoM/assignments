@@ -1,0 +1,13 @@
+createplayer jdawson,Dawson,Jack
+addplayer jdawson
+addplayer jdawson,Dawson,Jack
+addaiplayer alphaTicTacToe,TicTacToe,Alpha
+displayplayer alphaTicTacToe
+displayplayer
+rankings
+playgame jdawson,alphaTicTacToe
+1 1
+1 2
+1 0
+rankings
+exit

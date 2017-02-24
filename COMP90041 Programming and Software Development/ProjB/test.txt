@@ -1,0 +1,53 @@
+#!/bin/sh
+# 
+# COMP90041 Semester 1, 2016
+# Project B Auto-test Script
+# Jianzhong Qi
+#
+
+cwd=`pwd`
+name=`basename $cwd`
+
+limiter="rlimit -t 10 -T 10 -f 20k -c 0"
+
+jdk="javac"
+jre="java"
+
+# Remove pre-existing test results
+rm -f *.class
+rm -f feedback.txt
+
+# check that TicTacToe.java exists
+echo -e "Feedback:" > feedback.txt
+if [ ! -f TicTacToe.java ] ; then
+	echo -e "\tOops, wrong file name!!!" >> feedback.txt
+	echo -e "\tYou must have a file named: \"TicTacToe.java\" \n" >> feedback.txt   
+	exit 0
+
+else
+	echo -e "\tCompiling your program with \"$jdk\"...\n" >> feedback.txt 
+	$jdk -O *.java  >> feedback.txt 2>&1
+fi
+
+if [ -f TicTacToe.class  ] ; then
+	echo -e "\tYour program has been run successfully :-)\n" >> feedback.txt
+	echo -e "\tNow, it's your responsibility to test your program for correctness!" >> feedback.txt
+	echo -e "\tHere is a simple test case, and the results:\n" >> feedback.txt
+	
+	f=test0.txt
+	$limiter $jre TicTacToe <$f > tmp 2>&1
+	echo -e "============================================" >> feedback.txt
+	echo -e "Test for input file: $f" >>feedback.txt
+	echo -e "Expected results:\t\t\t\tYour results:" >> feedback.txt
+	if sdiff -w 100 test0-output.txt tmp \
+		>>feedback.txt ; then
+		echo -e "\nYour results seem to be CORRECT :-).\n" >> feedback.txt
+	else
+		echo -e "\nOops, your results seem to be INCORRECT :-(\n" >> feedback.txt
+	fi
+	
+	rm -f tmp
+
+else
+	echo -e "\nFix these errors and resubmit your program!" >> feedback.txt
+fi

@@ -1,0 +1,59 @@
+Welcome to Tic Tac Toe!
+
+>'createplayer' is not a valid command.
+
+>Incorrect number of arguments supplied to command.
+
+>
+>
+>alphaTicTacToe,TicTacToe,Alpha,0 games,0 wins,0 draws
+
+>alphaTicTacToe,TicTacToe,Alpha,0 games,0 wins,0 draws
+jdawson,Dawson,Jack,0 games,0 wins,0 draws
+
+> WIN  | DRAW | GAME | USERNAME
+   0% |   0% |  0   | alphaTicTacToe
+   0% |   0% |  0   | jdawson
+
+> | | 
+-----
+ | | 
+-----
+ | | 
+Jack's move:
+ | | 
+-----
+ |O| 
+-----
+ | | 
+Alpha's move:
+X| | 
+-----
+ |O| 
+-----
+ | | 
+Jack's move:
+X| | 
+-----
+ |O|O
+-----
+ | | 
+Alpha's move:
+X|X| 
+-----
+ |O|O
+-----
+ | | 
+Jack's move:
+X|X| 
+-----
+O|O|O
+-----
+ | | 
+Game over. Jack won!
+
+> WIN  | DRAW | GAME | USERNAME
+ 100% |   0% |  1   | jdawson
+   0% |   0% |  1   | alphaTicTacToe
+
+>

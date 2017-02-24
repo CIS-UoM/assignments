@@ -1,0 +1,80 @@
+Welcome to Tic Tac Toe!
+
+>
+>The username has been used already.
+
+>The player does not exist.
+
+>
+>Are you sure you want to remove all players? (y/n)
+
+>The player does not exist.
+
+>
+>
+>
+>The player does not exist.
+
+>rbukater,Bukater,Rose,0 games,0 wins,0 draws
+
+>jdawson,Dawson,Jack,0 games,0 wins,0 draws
+rbukater,Bukater,Rose,0 games,0 wins,0 draws
+
+> WIN  | DRAW | GAME | USERNAME
+   0% |   0% |  0   | jdawson
+   0% |   0% |  0   | rbukater
+
+>Player does not exist.
+
+> | | 
+-----
+ | | 
+-----
+ | | 
+Rose's move:
+ | | 
+-----
+ |O| 
+-----
+ | | 
+Jack's move:
+Invalid move. The cell has been occupied.
+Jack's move:
+Invalid move. You must place at a cell within {0,1,2} {0,1,2}.
+Jack's move:
+ | | 
+-----
+ |O| 
+-----
+ | |X
+Rose's move:
+ | | 
+-----
+ |O|O
+-----
+ | |X
+Jack's move:
+ | | 
+-----
+ |O|O
+-----
+ |X|X
+Rose's move:
+ | | 
+-----
+O|O|O
+-----
+ |X|X
+Game over. Rose won!
+
+> WIN  | DRAW | GAME | USERNAME
+ 100% |   0% |  1   | rbukater
+   0% |   0% |  1   | jdawson
+
+>Are you sure you want to reset all player statistics? (y/n)
+
+> WIN  | DRAW | GAME | USERNAME
+   0% |   0% |  0   | jdawson
+   0% |   0% |  0   | rbukater
+
+>

@@ -1,0 +1,28 @@
+addplayer rbukater,Bukater,Rose
+addplayer rbukater,Bukater,Ramsey
+removeplayer lbukater
+removeplayer rbukater
+removeplayer
+y
+editplayer rbukater,Bukater,Rose
+addplayer rbukater,Bukater,Ramsey
+editplayer rbukater,Bukater,Rose
+addplayer jdawson,Dawson,Jack
+displayplayer lbukater
+displayplayer rbukater
+displayplayer
+rankings
+playgame lbukater,jdawson
+playgame rbukater,jdawson
+1 1
+1 1
+3 3
+2 2
+1 2
+2 1
+1 0
+rankings
+resetstats
+y
+rankings
+exit
